@@ -1,5 +1,10 @@
 # Applied-AI-Technologies
 
+# CoffAI - Cafeteria with Artificial Intelligence
+Self-Scanning-Checkout for cafeteria.
+
+---
+
 Repo for the lecture "Applied Artificial Intelligence" at the University of Applied Sciences Esslingen created by [Dionysios Satikidis](mailto:dionysios.satikidis@gmail.com) and [Jan Seyler](mailto:Jan.Seyler@gmail.com).
 
 [Module Description HS Esslingen](https://www.hs-esslingen.de/fileadmin/media/Fakultaeten/it/FAKULTAET/Studiengaenge/Modulhandbuecher/Wahlfachmodul/HE-IT_Modulhandbuch-Wahlfachmodul-_Wahlpflichtfaecher_SWB_TIB_WKB_2019-02-15.pdf)</br>
