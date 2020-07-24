@@ -1,1 +1,0 @@
-07/24/2020 15:39:26, Created, .\uploads\000146.jpg, http://localhost/cafeteriaAI_normalMode.php?fileToUpload=000146.jpg
