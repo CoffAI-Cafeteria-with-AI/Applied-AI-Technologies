@@ -1,8 +1,6 @@
 # CoffAI - Cafeteria with AI
 
-<style>img { margin: 0.5em; }</style>
-
-<img src="c:/tensorflow1/models/research/object_detection/homeImage.jpg" alt="labeled photo of food" height="180px"/>
+<img src="./homeImage.jpg" alt="labeled photo of food" height="180px"/>
 
 ## Little Story
 We have started this project due to the lecture Applied Artificial Intelligence at Hochschule Esslingen. Our idea was to set up a software system that detects food using Object Detection.
