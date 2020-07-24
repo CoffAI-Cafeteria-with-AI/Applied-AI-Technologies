@@ -58,4 +58,4 @@ Due to the upload size, we have decided to only upload our trained model without
 
 * **Dennis Herzog**
 * **Maxim Bickel**
-* **Philipp Dobler** - *project manager*"# CoffAI" 
+* **Philipp Dobler** - *project manager*
