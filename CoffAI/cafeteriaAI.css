@@ -1,0 +1,452 @@
+/* Maxim Bickel, Dennis Herzog, Philipp Dobler */
+
+* {
+    font-family: arial, helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+#headerFieldset {
+    height: 95vh;
+}
+
+header {
+    background-color: silver;
+    box-shadow: 0px 4px 4px #444;
+    padding: 0.75em 0 0.25em 1.5em;
+    font-size: larger;
+    display: flex;
+    vertical-align: center;
+}
+
+h1 {
+    color: rgb(0, 0, 0);
+    text-shadow: 0 0px 0px #666666, 0 1px 1px #FFFFFF;
+    margin: 0.25em 0 0 0.5em;
+}
+
+#logo {
+    width: 4em;
+}
+
+fieldset {
+    padding: 1.5em;
+    width: fit-content;
+    margin: 2em 0 0 2em;
+    background: #eee;
+}
+
+legend {
+    background: white;
+    padding: 0.75em;
+    border: 1px solid #bbb;
+    -webkit-box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.1);
+    /* Safari 3-4, iOS 4.0.2 - 4.2, Android 2.3+ */
+    -moz-box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.1);
+    /* Firefox 3.5 - 3.6 */
+    box-shadow: inset 2px 2px 3px rgba(0, 0, 0, 0.1);
+    /* Opera 10.5, IE 9, Firefox 4+, Chrome 6+, iOS 5 */
+    /* box-shadow: [horizontal offset] [vertical offset] [blur radius] [optional spread radius] [color]; */
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+label {
+    display: inline-block;
+}
+
+div>label {
+    width: 8em;
+    padding-top: 0.3em;
+    vertical-align: top;
+}
+
+.category,
+select {
+    width: 4em;
+    padding: 0.3em;
+    border: 1px solid #bbb;
+    text-align: right;
+}
+
+.category:hover,
+select:hover {
+    border: 1px solid #555;
+    border-left: 0.25em solid #999;
+    -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.category:focus,
+select:focus {
+    border: 1px solid #000;
+    border-left: 0.25em solid #999;
+    background: #ffc;
+}
+
+.form_selection {
+    border-left: 0.25em solid #999;
+    width: 7em;
+}
+
+
+/* https://alligator.io/css/styling-form-input-validity/ */
+
+.simple-form input {
+    margin-left: 0.35em;
+    border-left: 0.25em solid;
+}
+
+.simple-form input:optional {
+    border-left-color: #999;
+}
+
+.simple-form input:required {
+    border-left-color: palegreen;
+}
+
+.simple-form input:invalid {
+    border-left-color: salmon;
+}
+
+#rechargeCreditButton,
+input[type="submit"],
+input[type="reset"] {
+    margin-left: 0;
+    text-align: center;
+    font-weight: bold;
+    margin-top: 1.5em;
+    width: 49%;
+    padding: 0.75em;
+    background: #fff;
+    border: 1px solid #bbb;
+    -webkit-border-radius: 16px;
+    -moz-border-radius: 16px;
+    border-radius: 16px;
+    -webkit-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.8);
+    text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+}
+
+#rechargeCreditButton:hover,
+#rechargeCreditButton:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    border-color: #090;
+    color: #090;
+}
+
+input[type="reset"]:hover,
+input[type="reset"]:focus {
+    border-color: #f55;
+    color: #f55;
+}
+
+#rechargeCreditButton:active,
+input[type="submit"]:active,
+input[type="reset"]:active {
+    background-color: #DDD;
+}
+
+::-webkit-input-placeholder {
+    color: silver;
+}
+
+::-moz-placeholder {
+    color: silver;
+}
+
+:-ms-input-placeholder {
+    color: silver;
+}
+
+::placeholder {
+    color: silver;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    display: flex;
+    align-items: center;
+    color: white;
+    background-color: black;
+    height: 5vh;
+    width: 100%;
+    font-size: 64%;
+    padding: 0.25em 1em;
+}
+
+.spacing_0_35 {
+    margin-bottom: 0.35em;
+}
+
+.spacing_1_5 {
+    margin-bottom: 1.5em;
+}
+
+.currency {
+    margin-left: 0.25em;
+    display: inline;
+}
+
+#image,
+#image_saved {
+    margin-top: 25px;
+    max-height: 70vh;
+}
+
+#homeImage {
+    max-height: 70vh;
+    object-fit: cover;
+}
+
+#homeImage_div {
+    margin: auto;
+    width: fit-content;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+#runAI {
+    top: 1.25em;
+    right: 20em;
+}
+
+#settings {
+    top: 1.25em;
+    right: 11em;
+}
+
+#databaseButton {
+    top: 1.25em;
+    right: 2em;
+}
+
+#databaseButtonsDiv {
+    margin-top: 7px
+}
+
+.databaseButtons {
+    position: relative;
+    background-color: #fff;
+    border: 0px;
+    border-bottom: 1px solid;
+    width: 100%;
+    font-size: 1.25em;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    padding: 1em 0em 1em 2em;
+}
+
+.databaseButtonsImg {
+    position: relative;
+    margin: 1em;
+    object-fit: cover;
+    height: 4em;
+}
+
+#newCustomer {
+    margin-left: 5em;
+}
+
+#getCredit {
+    margin-left: 5em;
+    margin-right: 7em;
+}
+
+#rechargeCredit {
+    margin-left: 3em;
+}
+
+#getTables {
+    margin-left: 7em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.homeButtons {
+    width: 8em;
+    position: absolute;
+    font-size: 1em;
+    font-weight: 600;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    padding: 0.5em 1.5em 0.5em 1.5em;
+    box-shadow: inset 0px 0px 5px 1px #000000;
+    -webkit-box-shadow: inset 0px 0px 5px 1px #000000;
+    -moz-box-shadow: inset 0px 0px 5px 1px #000000;
+    cursor: pointer;
+    text-align: center;
+}
+
+.homeButtons:hover {
+    background-image: -webkit-linear-gradient(top, #FFFFFF, rgb(180, 255, 180));
+    background-image: -moz-linear-gradient(top, #FFFFFF, rgb(180, 255, 180));
+    background-image: -ms-linear-gradient(top, #FFFFFF, rgb(180, 255, 180));
+    background-image: -o-linear-gradient(top, #FFFFFF, rgb(180, 255, 180));
+    background-image: linear-gradient(to bottom, #FFFFFF, rgb(180, 255, 180));
+}
+
+#loadingDiv {
+    width: fit-content;
+    padding: 0.75em;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    right: 0;
+    top: 0;
+    text-align: center;
+    font-size: xx-large;
+}
+
+#loading {
+    margin: auto;
+    margin-bottom: 0.75em;
+    border: 0.5em solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 0.5em solid #3498db;
+    width: 1.5em;
+    height: 1.5em;
+    -webkit-animation: spin 1.5s linear infinite;
+    animation: spin 1.5s linear infinite;
+}
+
+#loadingParagraph {
+    color: white;
+}
+
+@-moz-keyframes spin {
+    from {
+        -moz-transform: rotate(0deg);
+    }
+    to {
+        -moz-transform: rotate(360deg);
+    }
+}
+
+@-webkit-keyframes spin {
+    from {
+        -webkit-transform: rotate(0deg);
+    }
+    to {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+#message {
+    margin: auto;
+    margin-top: 2em;
+    width: fit-content;
+    border: 3px solid rgb(200, 0, 0);
+    padding: 0.5em 2em;
+    font-size: large;
+    text-align: center;
+    line-height: 220%;
+}
+
+#databaseOutput {
+    margin: 2em;
+    height: 70vh;
+    overflow: auto;
+}
+
+td {
+    padding-left: 0.4em;
+    padding-right: 1em;
+}
+
+th {
+    text-align: left;
+    padding-left: 0.4em;
+    padding-right: 1em;
+}
+
+tr:nth-child(even) {
+    background-color: #e4f2e6;
+}
+
+#flex_div {
+    display: flex;
+    align-items: center;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+}
+
+#flex_sideBySide {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+#bill {
+    margin: 2em;
+    width: fit-content;
+    border: 3px solid rgba(77, 182, 77, 0.5);
+    padding: 0.5em 2em;
+    font-size: large;
+    text-align: center;
+    line-height: 200%;
+}
+
+#changedPricesMessage {
+    margin: 2em;
+    width: fit-content;
+    border: 3px solid rgba(77, 182, 77, 0.5);
+    padding: 0.5em 2em;
+    font-size: large;
+    text-align: center;
+    line-height: 200%;
+}
+
+#databaseResultForChangedCredits {
+    text-align: center;
+    margin: 4em 10em 0 10em;
+    padding: 2em;
+    border: 3px solid rgba(77, 182, 77, 0.5);
+}
+
+#databaseResultForChangedCredits>table {
+    margin: auto;
+}
+
+#showCustomerTable,
+#showPurchasesTable,
+#showJoinedTable {
+    background-repeat: no-repeat;
+    background-size: auto 4em;
+}
+
+#showCustomerTable {
+    background-image: url("./Customers.png");
+    background-position: 25em;
+}
+
+#showPurchasesTable {
+    background-image: url("./purchases.png");
+    background-position: 27em;
+}
+
+#showJoinedTable {
+    background-image: url("./purchases_joined_with_customers.png");
+    background-position: 23em;
+}

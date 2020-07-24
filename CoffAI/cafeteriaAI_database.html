@@ -1,0 +1,43 @@
+<!-- Maxim Bickel, Dennis Herzog, Philipp Dobler -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CoffAI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cafeteriaAI.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" href="./cafeteriaFavicon.png" type="image/ico">
+</head>
+
+<body>
+    <div id="headerFieldset">
+        <header>
+            <a href="cafeteriaAI.html" title="Back to main page"><img src="./cafeteriaFavicon_breiter.png" id="logo"></a>
+            <h1>CoffAI - Database</h1>
+            <a href="cafeteriaAI_normalMode.php" title="Run Artificial Intelligence"><button class="homeButtons" id="runAI">Run AI</button></a>
+            <a href="cafeteriaAI_Prices.html" title="Change Settings"><button class="homeButtons" id="settings">Settings</button></a>
+        </header>
+        <main>
+            <div id="databaseButtonsDiv">
+                <a href="cafeteriaAI_database_new_customer.html" title="Create new Customer"><button class="databaseButtons">Create new customer<img src="./newCustomer.png" class="databaseButtonsImg" id="newCustomer"></button></a>
+                <a href="cafeteriaAI_database_change_credit.php" title="Get / recharge / withdraw"><button class="databaseButtons">Get credit<img src="./getCredit.png" class="databaseButtonsImg" id="getCredit">Or change credit<img src="./rechargeCredit.png" class="databaseButtonsImg" id="rechargeCredit"></button></a>
+                <a href="cafeteriaAI_database_get_tables.php" title="Get Tables"><button class="databaseButtons">Get tables<img src="./getTables.png" class="databaseButtonsImg" id="getTables"></button></a>
+            </div>
+        </main>
+    </div>
+
+    <footer>
+        &copy;
+        <script>
+            const d = new Date();
+            document.write(d.getFullYear());
+        </script>
+        by Maxim Bickel, Dennis Herzog & Philipp Dobler
+    </footer>
+
+</body>
+
+</html>
