@@ -1,0 +1,60 @@
+<!-- Maxim Bickel, Dennis Herzog, Philipp Dobler -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>CoffAI</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./cafeteriaAI.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="./cafeteriaAI.js"></script>
+    <link rel="icon" href="./cafeteriaFavicon.png" type="image/ico">
+</head>
+
+<body onload="loadFile()">
+    <div id="headerFieldset">
+        <header>
+            <a href="cafeteriaAI.html" title="Back to main page"><img src="./cafeteriaFavicon_breiter.png" id="logo"></a>
+            <h1>CoffAI - Settings</h1>
+            <a href="cafeteriaAI_normalMode.php" title="Run Artificial Intelligence"><button class="homeButtons" id="runAI">Run AI</button></a>
+            <a href="cafeteriaAI_database.html" title="Go to Database features"><button class="homeButtons" id="databaseButton">Database</button></a>
+        </header>
+        <main>
+            <form action="cafeteriaAI_Prices_Result.php" method="POST" class="simple-form">
+                <fieldset>
+                    <legend>Please enter the new prices!</legend>
+                    <div>
+                        <label for="titel">Currency:</label>
+                        <select onchange="changeCurrency()" name="selectedCurrency" id="selectedCurrency" class="form_selection">
+                        <option value="€">€ Euro</option>
+                        <option value="$">$ Dollar</option>
+                        <option value="£">£ Pound</option>
+                    </select>
+                    </div>
+                    <div class="spacing_0_35"></div>
+                    <div id="endDivs" hidden>
+                        <textarea name="fileContent" id="fileContent" readonly></textarea>
+                    </div>
+                    <div class="spacing_0_35"></div>
+
+                    <input type="submit" class="submit" value="Save" onclick="savePlaceholder();" />
+                    <input type="reset" class="reset" value="Reset" />
+                </fieldset>
+            </form>
+        </main>
+    </div>
+
+    <footer>
+        &copy;
+        <script>
+            const d = new Date();
+            document.write(d.getFullYear());
+        </script>
+        by Maxim Bickel, Dennis Herzog & Philipp Dobler
+    </footer>
+
+</body>
+
+</html>
