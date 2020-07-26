@@ -22,7 +22,7 @@ Song Y, Guadarrama S, Murphy K, CVPR 2017
 (to use a local web server you can install for example [XAMPP](https://www.apachefriends.org/de/index.html) like we did)
 
 ### Copy Files for the application interface
-[Here](https://github.com/CoffAI-Cafeteria-with-AI/Applied-AI-Technologies/tree/master/CoffAI/Only%20application%20Interface) you can find a directory with the files you need to launch the application interface. You have to copy all files from this directory into your object detection installation path, except the visualization_utils.py. This single file should be saved in the subfolder utils in it.
+[Here](https://github.com/CoffAI-Cafeteria-with-AI/Applied-AI-Technologies/tree/master/CoffAI/Only%20application%20Interface) you can find the files you need to launch the application interface. You have to copy all files from this directory into your object detection installation path, except the visualization_utils.py. This single file should be saved in the subfolder utils in it.
 
 ### Change Paths
 If you follow the installation instructions, given on [this page](https://github.com/EdjeElectronics/TensorFlow-Object-Detection-API-Tutorial-Train-Multiple-Objects-Windows-10), you won't have to change any paths.
